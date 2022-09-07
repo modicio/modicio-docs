@@ -4,4 +4,4 @@ This repository contains the automatically generated ScalaDoc/JavaDoc sources fr
 
 > :robot: This repository is maintained by a bot which updates documentation changes on every main-push in modicio.
 
-**The documentation is published on [this github page](https://modicio.github.io/modicio-docs/codi/index.html)**
+**The documentation is published on [this github page](https://modicio.github.io/modicio-docs/modicio/index.html)**
