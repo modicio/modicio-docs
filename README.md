@@ -1,7 +1,7 @@
 # modicio-docs
 
-This repository contains the automatically generated ScalaDoc/JavaDoc sources from ``codi-native``. 
+This repository contains the automatically generated ScalaDoc/JavaDoc sources from the ``modicio`` main framework repository. 
 
-> :robot: This repository is maintained by a bot which updates documentation changes on every main-push in codi-native.
+> :robot: This repository is maintained by a bot which updates documentation changes on every main-push in modicio.
 
-**The documentation is published on [this github page](https://modicio.github.io/codi-native-docs/codi/index.html)**
+**The documentation is published on [this github page](https://modicio.github.io/modicio-docs/codi/index.html)**
