@@ -1,4 +1,4 @@
-# codi-native-docs
+# modicio-docs
 
 This repository contains the automatically generated ScalaDoc/JavaDoc sources from ``codi-native``. 
 
