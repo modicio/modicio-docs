@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Interface</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            modicio
+                    </a>
+            </div>
+            <div class="library-version">
+0.3            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="modicio::modic.io.model/Interface///PointingToDeclaration//769193423">
+  <div class="breadcrumbs"><a href="../../../index.html">modicio</a><span class="delimiter">/</span><a href="../index.html">modic.io.model</a><span class="delimiter">/</span><span class="current">Interface</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Interface</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="jakarta.persistence/Entity///PointingToDeclaration/"><span class="token annotation builtin">Entity</span></span></div></div><span class="token keyword">class </span><a href="index.html">Interface</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>dataID<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">leftOpenDelimiters<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-left-open/index.html">LeftOpen</a><span class="token operator">&gt;</span><span class="token operator"> = </span>LinkedList()<span class="token punctuation">, </span></span><span class="parameter ">rightOpenDelimiters<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-right-open/index.html">RightOpen</a><span class="token operator">&gt;</span><span class="token operator"> = </span>LinkedList()<span class="token punctuation">, </span></span><span class="parameter ">regionDelimiters<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-region/index.html">Region</a><span class="token operator">&gt;</span><span class="token operator"> = </span>LinkedList()<span class="token punctuation">, </span></span><span class="parameter ">pointDelimiters<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-point/index.html">Point</a><span class="token operator">&gt;</span><span class="token operator"> = </span>LinkedList()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>associationRelation<span class="token operator">: </span><a href="../-association-relation/index.html">AssociationRelation</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><p class="paragraph">The <a href="index.html">Interface</a> contains the compatability information of a <a href="../-association-relation/index.html">AssociationRelation</a> target in the variability time-space. An Interface can contain multiple types of intervals and points describing subsets of time-space. An AssociationRelation regarding a certain target type is fulfilled if the target fulfils at least one of the subsets defined by this class.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-2037886301%2FConstructors%2F769193423" anchor-label="Interface" id="-2037886301%2FConstructors%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-interface.html"><span><span>Interface</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2037886301%2FConstructors%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dataID<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">leftOpenDelimiters<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-left-open/index.html">LeftOpen</a><span class="token operator">&gt;</span><span class="token operator"> = </span>LinkedList()<span class="token punctuation">, </span></span><span class="parameter ">rightOpenDelimiters<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-right-open/index.html">RightOpen</a><span class="token operator">&gt;</span><span class="token operator"> = </span>LinkedList()<span class="token punctuation">, </span></span><span class="parameter ">regionDelimiters<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-region/index.html">Region</a><span class="token operator">&gt;</span><span class="token operator"> = </span>LinkedList()<span class="token punctuation">, </span></span><span class="parameter ">pointDelimiters<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-point/index.html">Point</a><span class="token operator">&gt;</span><span class="token operator"> = </span>LinkedList()<span class="token punctuation">, </span></span><span class="parameter ">associationRelation<span class="token operator">: </span><a href="../-association-relation/index.html">AssociationRelation</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1323928850%2FProperties%2F769193423" anchor-label="associationRelation" id="1323928850%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="association-relation.html"><span>association</span><wbr></wbr><span><span>Relation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1323928850%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="association-relation.html">associationRelation</a><span class="token operator">: </span><a href="../-association-relation/index.html">AssociationRelation</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Backlink to <a href="../-model/index.html">Model</a> to improve traversal.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2119827334%2FProperties%2F769193423" anchor-label="dataID" id="2119827334%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="data-i-d.html"><span>data</span><wbr></wbr><span><span>ID</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2119827334%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="data-i-d.html">dataID</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Technical database (JPA) identifier used for relation joins. The <a href="data-i-d.html">dataID</a> is system specific and not exported to XML. It must not be used to identify elements in distributed use-cases. It should not be used to identify elements from outside the service. All model elements provide other suitable identifiers to be used.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-905838263%2FFunctions%2F769193423" anchor-label="addIntervalDelimiter" id="-905838263%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-interval-delimiter.html"><span>add</span><wbr></wbr><span>Interval</span><wbr></wbr><span><span>Delimiter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-905838263%2FFunctions%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-interval-delimiter.html"><span class="token function">addIntervalDelimiter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">region<span class="token operator">: </span><a href="../-region/index.html">Region</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1229721871%2FFunctions%2F769193423" anchor-label="addOLeftOpenDelimiter" id="1229721871%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-o-left-open-delimiter.html"><span>add</span><wbr></wbr><span>OLeft</span><wbr></wbr><span>Open</span><wbr></wbr><span><span>Delimiter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1229721871%2FFunctions%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-o-left-open-delimiter.html"><span class="token function">addOLeftOpenDelimiter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">leftOpen<span class="token operator">: </span><a href="../-left-open/index.html">LeftOpen</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-239058590%2FFunctions%2F769193423" anchor-label="addPointDelimiter" id="-239058590%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-point-delimiter.html"><span>add</span><wbr></wbr><span>Point</span><wbr></wbr><span><span>Delimiter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-239058590%2FFunctions%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-point-delimiter.html"><span class="token function">addPointDelimiter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">point<span class="token operator">: </span><a href="../-point/index.html">Point</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="67736610%2FFunctions%2F769193423" anchor-label="addRightOpenDelimiter" id="67736610%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="add-right-open-delimiter.html"><span>add</span><wbr></wbr><span>Right</span><wbr></wbr><span>Open</span><wbr></wbr><span><span>Delimiter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="67736610%2FFunctions%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="add-right-open-delimiter.html"><span class="token function">addRightOpenDelimiter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">rightOpen<span class="token operator">: </span><a href="../-right-open/index.html">RightOpen</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-826399352%2FFunctions%2F769193423" anchor-label="getIntervalDelimiters" id="-826399352%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-interval-delimiters.html"><span>get</span><wbr></wbr><span>Interval</span><wbr></wbr><span><span>Delimiters</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-826399352%2FFunctions%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-interval-delimiters.html"><span class="token function">getIntervalDelimiters</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-region/index.html">Region</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="436116444%2FFunctions%2F769193423" anchor-label="getLeftOpenDelimiters" id="436116444%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-left-open-delimiters.html"><span>get</span><wbr></wbr><span>Left</span><wbr></wbr><span>Open</span><wbr></wbr><span><span>Delimiters</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="436116444%2FFunctions%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-left-open-delimiters.html"><span class="token function">getLeftOpenDelimiters</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-left-open/index.html">LeftOpen</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1392195877%2FFunctions%2F769193423" anchor-label="getPointDelimiters" id="1392195877%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-point-delimiters.html"><span>get</span><wbr></wbr><span>Point</span><wbr></wbr><span><span>Delimiters</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1392195877%2FFunctions%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-point-delimiters.html"><span class="token function">getPointDelimiters</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-point/index.html">Point</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="114014831%2FFunctions%2F769193423" anchor-label="getRightOpenDelimiters" id="114014831%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-right-open-delimiters.html"><span>get</span><wbr></wbr><span>Right</span><wbr></wbr><span>Open</span><wbr></wbr><span><span>Delimiters</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="114014831%2FFunctions%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-right-open-delimiters.html"><span class="token function">getRightOpenDelimiters</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-right-open/index.html">RightOpen</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-595464401%2FFunctions%2F769193423" anchor-label="initializeZeroIDs" id="-595464401%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="initialize-zero-i-ds.html"><span>initialize</span><wbr></wbr><span>Zero</span><wbr></wbr><span><span>IDs</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-595464401%2FFunctions%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="initialize-zero-i-ds.html"><span class="token function">initializeZeroIDs</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1825330654%2FFunctions%2F769193423" anchor-label="removeIntervalDelimiter" id="-1825330654%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-interval-delimiter.html"><span>remove</span><wbr></wbr><span>Interval</span><wbr></wbr><span><span>Delimiter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1825330654%2FFunctions%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-interval-delimiter.html"><span class="token function">removeIntervalDelimiter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">region<span class="token operator">: </span><a href="../-region/index.html">Region</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1165670297%2FFunctions%2F769193423" anchor-label="removeLeftOpenDelimiter" id="1165670297%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-left-open-delimiter.html"><span>remove</span><wbr></wbr><span>Left</span><wbr></wbr><span>Open</span><wbr></wbr><span><span>Delimiter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1165670297%2FFunctions%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-left-open-delimiter.html"><span class="token function">removeLeftOpenDelimiter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">leftOpen<span class="token operator">: </span><a href="../-left-open/index.html">LeftOpen</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-112050501%2FFunctions%2F769193423" anchor-label="removePointDelimiter" id="-112050501%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-point-delimiter.html"><span>remove</span><wbr></wbr><span>Point</span><wbr></wbr><span><span>Delimiter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-112050501%2FFunctions%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-point-delimiter.html"><span class="token function">removePointDelimiter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">point<span class="token operator">: </span><a href="../-point/index.html">Point</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="404301947%2FFunctions%2F769193423" anchor-label="removeRightOpenDelimiter" id="404301947%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="remove-right-open-delimiter.html"><span>remove</span><wbr></wbr><span>Right</span><wbr></wbr><span>Open</span><wbr></wbr><span><span>Delimiter</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="404301947%2FFunctions%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-right-open-delimiter.html"><span class="token function">removeRightOpenDelimiter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">rightOpen<span class="token operator">: </span><a href="../-right-open/index.html">RightOpen</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>(c) 2022 modicio Team @ ST TU-Dresden / Karl Kegel</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>ModelController</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            modicio
+                    </a>
+            </div>
+            <div class="library-version">
+0.3            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="modicio::modic.io.controller/ModelController///PointingToDeclaration//769193423">
+  <div class="breadcrumbs"><a href="../../../index.html">modicio</a><span class="delimiter">/</span><a href="../index.html">modic.io.controller</a><span class="delimiter">/</span><span class="current">ModelController</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Model</span><wbr></wbr><span><span>Controller</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.springframework.web.bind.annotation/RestController///PointingToDeclaration/"><span class="token annotation builtin">RestController</span></span></div></div><span class="token keyword">class </span><a href="index.html">ModelController</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>modelService<span class="token operator">: </span><a href="../../modic.io.logic/-model-service/index.html">ModelService</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>metadataService<span class="token operator">: </span><a href="../../modic.io.logic/-metadata-service/index.html">MetadataService</a></span></span><span class="token punctuation">)</span></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-489721714%2FConstructors%2F769193423" anchor-label="ModelController" id="-489721714%2FConstructors%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-model-controller.html"><span>Model</span><wbr></wbr><span><span>Controller</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-489721714%2FConstructors%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">modelService<span class="token operator">: </span><a href="../../modic.io.logic/-model-service/index.html">ModelService</a><span class="token punctuation">, </span></span><span class="parameter ">metadataService<span class="token operator">: </span><a href="../../modic.io.logic/-metadata-service/index.html">MetadataService</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-322014690%2FProperties%2F769193423" anchor-label="metadataService" id="-322014690%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="metadata-service.html"><span>metadata</span><wbr></wbr><span><span>Service</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-322014690%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="metadata-service.html">metadataService</a><span class="token operator">: </span><a href="../../modic.io.logic/-metadata-service/index.html">MetadataService</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2054866134%2FProperties%2F769193423" anchor-label="modelService" id="-2054866134%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="model-service.html"><span>model</span><wbr></wbr><span><span>Service</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2054866134%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="model-service.html">modelService</a><span class="token operator">: </span><a href="../../modic.io.logic/-model-service/index.html">ModelService</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1972453104%2FFunctions%2F769193423" anchor-label="getReferenceModel" id="-1972453104%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-reference-model.html"><span>get</span><wbr></wbr><span>Reference</span><wbr></wbr><span><span>Model</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1972453104%2FFunctions%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.springframework.web.bind.annotation/GetMapping///PointingToDeclaration/"><span class="token annotation builtin">GetMapping</span></span><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="token punctuation">[</span><span><span class="breakable-word"><span class="token string">&quot;model/reference&quot;</span></span></span><wbr></wbr><span class="token punctuation">]</span><span class="token punctuation">, </span></span><wbr></wbr><span>produces<span class="token operator"> = </span><span class="token punctuation">[</span><span><span class="breakable-word"><span class="token string">&quot;application/xml&quot;</span></span></span><wbr></wbr><span class="token punctuation">]</span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-reference-model.html"><span class="token function">getReferenceModel</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../modic.io.model/-fragment/index.html">Fragment</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Get the active reference model (fragment) as closed model.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1941884626%2FFunctions%2F769193423" anchor-label="postNewVariant" id="-1941884626%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="post-new-variant.html"><span>post</span><wbr></wbr><span>New</span><wbr></wbr><span><span>Variant</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1941884626%2FFunctions%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.springframework.web.bind.annotation/PostMapping///PointingToDeclaration/"><span class="token annotation builtin">PostMapping</span></span><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="token punctuation">[</span><span><span class="breakable-word"><span class="token string">&quot;model/variant&quot;</span></span></span><wbr></wbr><span class="token punctuation">]</span><span class="token punctuation">, </span></span><wbr></wbr><span>produces<span class="token operator"> = </span><span class="token punctuation">[</span><span><span class="breakable-word"><span class="token string">&quot;application/json&quot;</span></span></span><wbr></wbr><span class="token punctuation">]</span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="post-new-variant.html"><span class="token function">postNewVariant</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.springframework.web.bind.annotation/RequestParam///PointingToDeclaration/"><span class="token annotation builtin">RequestParam</span></span><span class="token punctuation">(</span><span>required<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">false</span></span><span class="token punctuation">, </span></span><wbr></wbr><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;variant_id&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span> </span>variantID<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.springframework.web.bind.annotation/RequestParam///PointingToDeclaration/"><span class="token annotation builtin">RequestParam</span></span><span class="token punctuation">(</span><span>required<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">false</span></span><span class="token punctuation">, </span></span><wbr></wbr><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;variant_name&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span> </span>name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Create a new variant. If an existing variant is specified, the new variant will be initialized with a copy of the model. If no existing variant is specified, a new empty variant with the given name is constructed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1239957968%2FFunctions%2F769193423" anchor-label="postReference" id="1239957968%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="post-reference.html"><span>post</span><wbr></wbr><span><span>Reference</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1239957968%2FFunctions%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.springframework.web.bind.annotation/PostMapping///PointingToDeclaration/"><span class="token annotation builtin">PostMapping</span></span><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="token punctuation">[</span><span><span class="breakable-word"><span class="token string">&quot;model/variant/reference&quot;</span></span></span><wbr></wbr><span class="token punctuation">]</span><span class="token punctuation">, </span></span><wbr></wbr><span>produces<span class="token operator"> = </span><span class="token punctuation">[</span><span><span class="breakable-word"><span class="token string">&quot;application/json&quot;</span></span></span><wbr></wbr><span class="token punctuation">]</span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="post-reference.html"><span class="token function">postReference</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.springframework.web.bind.annotation/RequestParam///PointingToDeclaration/"><span class="token annotation builtin">RequestParam</span></span><span class="token punctuation">(</span><span>required<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">false</span></span><span class="token punctuation">, </span></span><wbr></wbr><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;running_UUID&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span> </span>runningUID<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.springframework.web.bind.annotation/RequestParam///PointingToDeclaration/"><span class="token annotation builtin">RequestParam</span></span><span class="token punctuation">(</span><span>required<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">false</span></span><span class="token punctuation">, </span></span><wbr></wbr><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;variant_UUID&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span> </span>variantUID<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Activate the specified variant as reference model.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2117846125%2FFunctions%2F769193423" anchor-label="putModelOfVariant" id="2117846125%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="put-model-of-variant.html"><span>put</span><wbr></wbr><span>Model</span><wbr></wbr><span>Of</span><wbr></wbr><span><span>Variant</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2117846125%2FFunctions%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="org.springframework.web.bind.annotation/PutMapping///PointingToDeclaration/"><span class="token annotation builtin">PutMapping</span></span><span class="token punctuation">(</span><span>value<span class="token operator"> = </span><span class="token punctuation">[</span><span><span class="breakable-word"><span class="token string">&quot;model&quot;</span></span></span><wbr></wbr><span class="token punctuation">]</span><span class="token punctuation">, </span></span><wbr></wbr><span>produces<span class="token operator"> = </span><span class="token punctuation">[</span><span><span class="breakable-word"><span class="token string">&quot;application/json&quot;</span></span></span><wbr></wbr><span class="token punctuation">]</span><span class="token punctuation">, </span></span><wbr></wbr><span>consumes<span class="token operator"> = </span><span class="token punctuation">[</span><span><span class="breakable-word"><span class="token string">&quot;application/xml&quot;</span></span></span><wbr></wbr><span class="token punctuation">]</span></span><wbr></wbr><span class="token punctuation">)</span></div></div><span class="token keyword"></span><span class="token keyword">fun </span><a href="put-model-of-variant.html"><span class="token function">putModelOfVariant</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.springframework.web.bind.annotation/RequestParam///PointingToDeclaration/"><span class="token annotation builtin">RequestParam</span></span><span class="token punctuation">(</span><span>required<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">false</span></span><span class="token punctuation">, </span></span><wbr></wbr><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;variant_UUID&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span> </span>variantUID<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.springframework.web.bind.annotation/RequestParam///PointingToDeclaration/"><span class="token annotation builtin">RequestParam</span></span><span class="token punctuation">(</span><span>required<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">false</span></span><span class="token punctuation">, </span></span><wbr></wbr><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;variant_name&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span> </span>name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator">?</span><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.springframework.web.bind.annotation/RequestParam///PointingToDeclaration/"><span class="token annotation builtin">RequestParam</span></span><span class="token punctuation">(</span><span>required<span class="token operator"> = </span><span class="breakable-word"><span class="token boolean">false</span></span><span class="token punctuation">, </span></span><wbr></wbr><span>name<span class="token operator"> = </span><span class="breakable-word"><span class="token string">&quot;as_version&quot;</span></span></span><wbr></wbr><span class="token punctuation">)</span> </span>asVersion<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a><span class="token operator"> = </span><span class="token boolean">false</span><span class="token punctuation">, </span></span><span class="parameter "><span><span class="token annotation builtin">@</span><span data-unresolved-link="org.springframework.web.bind.annotation/RequestBody///PointingToDeclaration/"><span class="token annotation builtin">RequestBody</span></span> </span>fragment<span class="token operator">: </span><a href="../../modic.io.model/-fragment/index.html">Fragment</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Set a complete model (<a href="../../modic.io.model/-fragment/index.html">Fragment</a>). If the specified variant is existent, a new running version will be created. if the variant is not present, a new variant with the given <code class="lang-kotlin">name</code> is initialized with the specified model as an initial version</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>(c) 2022 modicio Team @ ST TU-Dresden / Karl Kegel</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

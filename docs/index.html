@@ -1,2 +1,207 @@
-<!DOCTYPE html ><html><head><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/><title></title><meta content="" name="description"/><meta content="" name="keywords"/><meta http-equiv="content-type" content="text/html; charset=UTF-8"/><link href="lib/index.css" media="screen" type="text/css" rel="stylesheet"/><link href="lib/template.css" media="screen" type="text/css" rel="stylesheet"/><link href="lib/print.css" media="print" type="text/css" rel="stylesheet"/><link href="lib/diagrams.css" media="screen" type="text/css" rel="stylesheet" id="diagrams-css"/><script type="text/javascript" src="lib/jquery.min.js"></script><script type="text/javascript" src="lib/index.js"></script><script type="text/javascript" src="index.js"></script><script type="text/javascript" src="lib/scheduler.js"></script><script type="text/javascript" src="lib/template.js"></script><script type="text/javascript">/* this variable can be used by the JS to determine the path to the root document */
-var toRoot = '';</script></head><body><div id="search"><span id="doc-title"><span id="doc-version"></span></span> <span class="close-results"><span class="left">&lt;</span> Back</span><div id="textfilter"><span class="input"><input autocapitalize="none" placeholder="Search" id="index-input" type="text" accesskey="/"/><i class="clear material-icons"></i><i id="search-icon" class="material-icons"></i></span></div></div><div id="search-results"><div id="search-progress"><div id="progress-fill"></div></div><div id="results-content"><div id="entity-results"></div><div id="member-results"></div></div></div><div id="content-scroll-container" style="-webkit-overflow-scrolling: touch;"><div id="content-container" style="-webkit-overflow-scrolling: touch;"><div id="subpackage-spacer"><div id="packages"><h1>Packages</h1><ul><li class="indented0 current" name="_root_.root" group="Ungrouped" fullComment="no" data-isabs="false" visbl="pub"><a id="_root_"></a><a id="root:_root_"></a> <span class="permalink"><a href="index.html" title="Permalink"><i class="material-icons"></i></a></span> <span class="modifier_kind"><span class="modifier"></span> <span class="kind">package</span></span> <span class="symbol"><span class="name">root</span></span></li><li class="indented1 " name="_root_.modicio" group="Ungrouped" fullComment="no" data-isabs="false" visbl="pub"><a id="modicio"></a><a id="modicio:modicio"></a> <span class="permalink"><a href="modicio/index.html" title="Permalink"><i class="material-icons"></i></a></span> <span class="modifier_kind"><span class="modifier"></span> <span class="kind">package</span></span> <span class="symbol"><a href="modicio/index.html" title=""><span class="name">modicio</span></a></span></li></ul></div></div><div id="content"><body class="package value"><div id="definition"><div class="big-circle package">p</div><h1>root package <span class="permalink"><a href="index.html" title="Permalink"><i class="material-icons"></i></a></span></h1></div><h4 id="signature" class="signature"><span class="modifier_kind"><span class="modifier"></span> <span class="kind">package</span></span> <span class="symbol"><span class="name">root</span></span></h4><div id="comment" class="fullcommenttop"></div><div id="template"><div id="allMembers"><div id="packages" class="package members"><h3>Package Members</h3><ol><li class="indented0 " name="_root_.modicio" group="Ungrouped" fullComment="no" data-isabs="false" visbl="pub"><a id="modicio"></a><a id="modicio:modicio"></a> <span class="permalink"><a href="modicio/index.html" title="Permalink"><i class="material-icons"></i></a></span> <span class="modifier_kind"><span class="modifier"></span> <span class="kind">package</span></span> <span class="symbol"><a href="modicio/index.html" title=""><span class="name">modicio</span></a></span></li></ol></div></div><div id="inheritedMembers"></div><div id="groupedMembers"><div name="Ungrouped" class="group"><h3>Ungrouped</h3></div></div></div><div id="tooltip"></div><div id="footer"></div></body></div></div></div></body></html>
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>modicio</title>
+    <link href="images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="scripts/sourceset_dependencies.js" async="async"></script>
+<link href="styles/style.css" rel="Stylesheet">
+<link href="styles/main.css" rel="Stylesheet">
+<link href="styles/prism.css" rel="Stylesheet">
+<link href="styles/logo-styles.css" rel="Stylesheet">
+<link href="styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="index.html">
+                            modicio
+                    </a>
+            </div>
+            <div class="library-version">
+0.3            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":dokkaHtml/main">jvm</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" id="content" pageIds="modicio::////PointingToDeclaration//769193423">
+  <div class="breadcrumbs"></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>modicio</span></span></h1>
+  </div>
+  <h2 class="">Packages</h2>
+  <div class="table"><a data-name="892890010%2FPackages%2F769193423" anchor-label="modic.io" id="892890010%2FPackages%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+    <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="modicio/modic.io/index.html">modic.io</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="892890010%2FPackages%2F769193423"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="2061974772%2FPackages%2F769193423" anchor-label="modic.io.controller" id="2061974772%2FPackages%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+    <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="modicio/modic.io.controller/index.html">modic.io.controller</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2061974772%2FPackages%2F769193423"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="319181194%2FPackages%2F769193423" anchor-label="modic.io.logic" id="319181194%2FPackages%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+    <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="modicio/modic.io.logic/index.html">modic.io.logic</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="319181194%2FPackages%2F769193423"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="271025188%2FPackages%2F769193423" anchor-label="modic.io.messages" id="271025188%2FPackages%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+    <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="modicio/modic.io.messages/index.html">modic.io.messages</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="271025188%2FPackages%2F769193423"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-325786219%2FPackages%2F769193423" anchor-label="modic.io.model" id="-325786219%2FPackages%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+    <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="modicio/modic.io.model/index.html">modic.io.model</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-325786219%2FPackages%2F769193423"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-686392322%2FPackages%2F769193423" anchor-label="modic.io.model.xml" id="-686392322%2FPackages%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+    <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="modicio/modic.io.model.xml/index.html">modic.io.model.xml</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-686392322%2FPackages%2F769193423"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+<a data-name="-1559079134%2FPackages%2F769193423" anchor-label="modic.io.repository" id="-1559079134%2FPackages%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+    <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+      <div>
+        <div class="main-subrow ">
+          <div class=""><span class="inline-flex">
+              <div><a href="modicio/modic.io.repository/index.html">modic.io.repository</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1559079134%2FPackages%2F769193423"></span>
+                <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+              </span></span></div>
+          <div class="pull-right">
+            <div class="platform-tags no-gutters">
+              <div class="platform-tag jvm-like">jvm</div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>(c) 2022 modicio Team @ ST TU-Dresden / Karl Kegel</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
