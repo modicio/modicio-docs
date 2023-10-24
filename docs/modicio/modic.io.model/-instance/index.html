@@ -65,24 +65,43 @@
   <div class="breadcrumbs"><a href="../../../index.html">modicio</a><span class="delimiter">/</span><a href="../index.html">modic.io.model</a><span class="delimiter">/</span><span class="current">Instance</span></div>
   <div class="cover ">
     <h1 class="cover"><span><span>Instance</span></span></h1>
-    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="jakarta.persistence/Entity///PointingToDeclaration/"><span class="token annotation builtin">Entity</span></span></div></div><span class="token keyword">class </span><a href="index.html">Instance</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>dataID<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>modelRoot<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>uri<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>header<span class="token operator">: </span><a href="../-header/index.html">Header</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">objects<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-i-object/index.html">IObject</a><span class="token operator">&gt;</span><span class="token operator"> = </span>LinkedList()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>fragment<span class="token operator">: </span><a href="../-fragment/index.html">Fragment</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><p class="paragraph">The Instance class represents the instance facet of the ESI clabject (<a href="../-fragment/index.html">Fragment</a>). The Instance contains the set of instance-objects forming a physical deep instance of the logically instantiated <a href="../-node/index.html">Node</a>.</p><h4 class="">See also</h4><div class="table"><div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-fragment/index.html"><span><span>Fragment</span></span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-i-object/index.html"><span><span>IObject</span></span></a></div></span></div><div></div></div></div></div></div></div>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><span data-unresolved-link="jakarta.persistence/Entity///PointingToDeclaration/"><span class="token annotation builtin">Entity</span></span></div></div><span class="token keyword">class </span><a href="index.html">Instance</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">var </span>dataID<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>modelRoot<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>uri<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>header<span class="token operator">: </span><a href="../-header/index.html">Header</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">objects<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-i-object/index.html">IObject</a><span class="token operator">&gt;</span><span class="token operator"> = </span>LinkedList()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>fragment<span class="token operator">: </span><a href="../-fragment/index.html">Fragment</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">var </span>rootNode<span class="token operator">: </span><a href="../-node/index.html">Node</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div><p class="paragraph">The Instance class represents the instance facet of the ESI clabject (<a href="../-fragment/index.html">Fragment</a>). The Instance contains the set of instance-objects forming a physical deep instance of the logically instantiated <a href="../-node/index.html">Node</a>.</p><h4 class="">See also</h4><div class="table"><div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-fragment/index.html"><span><span>Fragment</span></span></a></div></span></div><div></div></div></div><div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><a href="../-i-object/index.html"><span><span>IObject</span></span></a></div></span></div><div></div></div></div></div></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
     <div class="tabs-section-body">
       <div data-togglable="CONSTRUCTOR">
         <h2 class="">Constructors</h2>
-        <div class="table"><a data-name="513476322%2FConstructors%2F769193423" anchor-label="Instance" id="513476322%2FConstructors%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+        <div class="table"><a data-name="381654139%2FConstructors%2F769193423" anchor-label="Instance" id="381654139%2FConstructors%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
           <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
             <div class="main-subrow keyValue ">
               <div class=""><span class="inline-flex">
                   <div><a href="-instance.html"><span><span>Instance</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="513476322%2FConstructors%2F769193423"></span>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="381654139%2FConstructors%2F769193423"></span>
                     <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
                   </span></span></div>
               <div>
                 <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dataID<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">modelRoot<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">uri<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">header<span class="token operator">: </span><a href="../-header/index.html">Header</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">objects<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-i-object/index.html">IObject</a><span class="token operator">&gt;</span><span class="token operator"> = </span>LinkedList()<span class="token punctuation">, </span></span><span class="parameter ">fragment<span class="token operator">: </span><a href="../-fragment/index.html">Fragment</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="token punctuation">)</span></div><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">dataID<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">name<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">modelRoot<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">uri<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span class="token operator"> = </span><span class="token string">&quot;&quot;</span><span class="token punctuation">, </span></span><span class="parameter ">header<span class="token operator">: </span><a href="../-header/index.html">Header</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">objects<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html">MutableList</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-i-object/index.html">IObject</a><span class="token operator">&gt;</span><span class="token operator"> = </span>LinkedList()<span class="token punctuation">, </span></span><span class="parameter ">fragment<span class="token operator">: </span><a href="../-fragment/index.html">Fragment</a><span class="token operator">?</span><span class="token operator"> = </span>null<span class="token punctuation">, </span></span><span class="parameter ">rootNode<span class="token operator">: </span><a href="../-node/index.html">Node</a><span class="token operator">?</span><span class="token operator"> = </span>null</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="399608578%2FClasslikes%2F769193423" anchor-label="Companion" id="399608578%2FClasslikes%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-companion/index.html"><span><span>Companion</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="399608578%2FClasslikes%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">object </span><a href="-companion/index.html">Companion</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -166,6 +185,21 @@
               </div>
             </div>
           </div>
+<a data-name="-1089666949%2FProperties%2F769193423" anchor-label="rootNode" id="-1089666949%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="root-node.html"><span>root</span><wbr></wbr><span><span>Node</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1089666949%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">var </span><a href="root-node.html">rootNode</a><span class="token operator">: </span><a href="../-node/index.html">Node</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Backlink for faster traversal.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
 <a data-name="-1205240753%2FProperties%2F769193423" anchor-label="uri" id="-1205240753%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
           <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
             <div class="main-subrow keyValue ">
@@ -200,6 +234,21 @@
               </div>
             </div>
           </div>
+<a data-name="358345163%2FFunctions%2F769193423" anchor-label="autowire" id="358345163%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="autowire.html"><span><span>autowire</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="358345163%2FFunctions%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="autowire.html"><span class="token function">autowire</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
 <a data-name="-223190431%2FFunctions%2F769193423" anchor-label="getObjects" id="-223190431%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
           <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
             <div class="main-subrow keyValue ">
@@ -211,6 +260,21 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-objects.html"><span class="token function">getObjects</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-i-object/index.html">IObject</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2079903048%2FFunctions%2F769193423" anchor-label="getParentOfObject" id="-2079903048%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="get-parent-of-object.html"><span>get</span><wbr></wbr><span>Parent</span><wbr></wbr><span>Of</span><wbr></wbr><span><span>Object</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2079903048%2FFunctions%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="get-parent-of-object.html"><span class="token function">getParentOfObject</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">iObject<span class="token operator">: </span><a href="../-i-object/index.html">IObject</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-node/index.html">Node</a><span class="token operator">?</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -241,6 +305,21 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="remove-object.html"><span class="token function">removeObject</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">iObject<span class="token operator">: </span><a href="../-i-object/index.html">IObject</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="761000201%2FFunctions%2F769193423" anchor-label="updateHeader" id="761000201%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="update-header.html"><span>update</span><wbr></wbr><span><span>Header</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="761000201%2FFunctions%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="update-header.html"><span class="token function">updateHeader</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span></div></div></div>
                 </div>
               </div>
             </div>
